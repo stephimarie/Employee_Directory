@@ -65,6 +65,23 @@ function EmployeeTable(props) {
         {props.matchedEmployees.length > 0 ? (
             <p>{props.matchedEmployees.length} Matches Found.</p>
         ) : null}
+        <table className="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Picture</th>
+                    <th scope="col" onClick={props.sortName}>
+                        Name
+                        {props.nameSort === "ascending" ? (
+                            <FaSortDown className="sort-icon" />
+                        ) : (
+                            <FaSortUp className="sort-icon" />
+                        )}
+                    </th>
+                </tr>
+            </thead>
+
+        </table>
 
         </div>
     );
