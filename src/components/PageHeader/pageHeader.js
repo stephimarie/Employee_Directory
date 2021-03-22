@@ -1,5 +1,5 @@
 import React from "react";
-import "../pageHeader.css";
+import "./pageHeader.css";
 
 function PageHeader(props) {
   return (

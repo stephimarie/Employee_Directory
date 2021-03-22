@@ -1,5 +1,5 @@
 import React from "react";
-import "../banner.css";
+import "./banner.css";
 // import { Link } from "react-router-dom";
 
 function Banner(props) {

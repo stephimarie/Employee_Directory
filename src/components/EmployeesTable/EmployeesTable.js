@@ -1,5 +1,5 @@
 import React from "react";
-import "../emplytable.css";
+import "./employeesTable.css";
 // import { FiSearch, FiRefreshCcw, FiFilter } from "react-icons/fi";
 // import { FaSortDown, FaSortUp } from "react-icons/fa";
 // import { IconContext } from "react-icons";
