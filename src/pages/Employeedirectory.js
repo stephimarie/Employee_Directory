@@ -1,25 +1,27 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Container from "../components/container";
-import PageHeader from "../components/pageHeader";
-import EmployeesTable from "../components/EmployeeTable";
+import Container from "../components/Container";
+import PageHeader from "../components/PageHeader";
+import EmployeesTable from "../components/EmployeesTable";
 
 class EmployeeDirectory extends Component {
-    state = {
-        search: "",
-        employees: [],
-        nameSort: "ascending",
-        genderSort: "ascending",
-        ageSort: "ascending",
-        phoneSort: "ascending",
-        emailSort: "ascending",
-        addressSort: "ascending",
-        matchedEmployees: [],
-      }; 
-        // When this component mounts, search the Random User API
+  state = {
+    search: "",
+    employees: [],
+    nameSort: "ascending",
+    genderSort: "ascending",
+    ageSort: "ascending",
+    phoneSort: "ascending",
+    emailSort: "ascending",
+    addressSort: "ascending",
+    matchedEmployees: [],
+  };
+
+  // When this component mounts, search the Random User API
   componentDidMount() {
     this.getEmployees();
   }
+
   getEmployees = () => {
     API.getEmployees()
       .then((res) => {
@@ -47,6 +49,7 @@ class EmployeeDirectory extends Component {
       })
       .catch((err) => console.log(err));
   };
+
   sortName = () => {
     if (this.state.nameSort === "ascending") {
       console.log("descending name sort clicked");
@@ -100,6 +103,7 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+
   sortGender = () => {
     if (this.state.genderSort === "ascending") {
       console.log("descending gender sort clicked");
@@ -154,6 +158,7 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+
   sortAge = () => {
     if (this.state.ageSort === "ascending") {
       console.log("descending age sort clicked");
@@ -179,6 +184,7 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+
   sortPhone = () => {
     if (this.state.phoneSort === "ascending") {
       console.log("descending phone sort clicked");
@@ -208,6 +214,7 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+
   sortEmail = () => {
     if (this.state.emailSort === "ascending") {
       console.log("descending email sort clicked");
@@ -261,6 +268,7 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+
   sortAddress = () => {
     if (this.state.addressSort === "ascending") {
       console.log("descending address sort clicked");
@@ -314,6 +322,7 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+
   genderFilterMale = () => {
     console.log("male filter clicked");
     if (this.state.employees.length < 20) {
@@ -338,6 +347,7 @@ class EmployeeDirectory extends Component {
       search: "",
     });
   };
+
   genderFilterFemale = () => {
     console.log("female filter clicked");
     let femaleEmployees = [];
@@ -363,6 +373,7 @@ class EmployeeDirectory extends Component {
       search: "",
     });
   };
+
   handleInputChange = (event) => {
     console.log("Filtering table according to input");
     console.log(event.target.value.toLowerCase());
@@ -394,6 +405,7 @@ class EmployeeDirectory extends Component {
       matchedEmployees: matchedEmployees,
     });
   };
+
   refreshTable = () => {
     console.log("Employee Directory has been refreshed");
     this.getEmployees();
@@ -403,12 +415,41 @@ class EmployeeDirectory extends Component {
     });
   };
 
-
-
-
-
-
-
-
+  render() {
+    return (
+      <div>
+        <PageHeader
+          backgroundImage="http://washingtongrantmakers.com/sites/default/files/corporate-training-programs-for-employees-blog-background-image.jpg"
+          title="Employee Directory"
+          subtitle="This employee directory is populated with randomly generated users via an API call to the Random User API. This API simply generates random user data (shown below)."
+        ></PageHeader>
+        <Container>
+          <EmployeesTable
+            search={this.state.search}
+            filterTable={this.handleInputChange}
+            genderFilterMale={this.genderFilterMale}
+            genderFilterFemale={this.genderFilterFemale}
+            employees={this.state.employees}
+            matchedEmployees={this.state.matchedEmployees}
+            refreshTableFunction={this.refreshTable}
+            nameSort={this.state.nameSort}
+            genderSort={this.state.genderSort}
+            ageSort={this.state.ageSort}
+            phoneSort={this.state.phoneSort}
+            emailSort={this.state.emailSort}
+            addressSort={this.state.addressSort}
+            sortName={this.sortName}
+            sortAge={this.sortAge}
+            sortPhone={this.sortPhone}
+            sortEmail={this.sortEmail}
+            sortAddress={this.sortAddress}
+            sortGender={this.sortGender}
+          ></EmployeesTable>
+        </Container>
+      </div>
+    );
+  }
 }
+
+export default EmployeeDirectory;
 
