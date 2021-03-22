@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Container from "../components/Container";
-import PageHeader from "../components/PageHeader";
-import EmployeesTable from "../components/EmployeesTable";
+import Container from "../components/container";
+import PageHeader from "../components/pageHeader";
+import EmployeesTable from "../components/EmployeeTable";
 
 class EmployeeDirectory extends Component {
   state = {
