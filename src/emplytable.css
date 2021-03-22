@@ -5,11 +5,23 @@
 .input-icons {
     margin-bottom: 10px;
   }
-  
+
 .icon {
     margin-right: 10px;
     margin-top: 7px;
     margin-left: 10px;
     font-size: 20px;
   }
-  
+  .input-field {
+    vertical-align: center;
+    width: 100%;
+    max-width: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding-left: 35px;
+    text-align: left;
+  }
+   
