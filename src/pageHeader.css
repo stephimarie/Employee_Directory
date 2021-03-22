@@ -35,4 +35,8 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
+  .hero-text button:hover {
+    color: white;
+    transform: scale(1.1);
+  }
   
