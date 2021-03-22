@@ -1,7 +1,7 @@
 import React from "react";
 import "../emplytable.css";
-import Row from "../Row";
-import Column from "../Column";
+import Row from "./row";
+import Column from "./column";
 
 function EmployeesTable(props) {
     return (
