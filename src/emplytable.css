@@ -1,7 +1,15 @@
 .input-icons i {
     position: absolute;
   }
-  .input-icons {
+
+.input-icons {
     margin-bottom: 10px;
+  }
+  
+.icon {
+    margin-right: 10px;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-size: 20px;
   }
   
