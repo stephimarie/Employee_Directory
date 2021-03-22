@@ -1,18 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Nav from './Nav';
-import './App.css';
+import About from "./pages/About";
+import EmployeeDirectory from "./pages/EmployeeDirectory";
+import Navbar from "./components/Navbar";
+import Wrapper from "./components/Wrapper";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <h1>Hello World</h1>
-
-      <div>
-        <Nav />
-      </div>
-    </div>
+    <Router>
+      <Navbar />
+      <Wrapper>
+        <Route exact path="/" component={About} />
+        <Route exact path="/employee-directory" component={EmployeeDirectory} />
+      </Wrapper>
+      <Footer />
+    </Router>
   );
 }
 
