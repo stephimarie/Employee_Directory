@@ -179,6 +179,36 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+  sortPhone = () => {
+    if (this.state.phoneSort === "ascending") {
+      console.log("descending phone sort clicked");
+      let employees = this.state.employees.sort(
+        (a, b) => b.phone.replace(/[()-]/g, "") - a.phone.replace(/[()-]/g, "")
+      );
+      let matchedEmployees = this.state.matchedEmployees.sort(
+        (a, b) => b.phone.replace(/[()-]/g, "") - a.phone.replace(/[()-]/g, "")
+      );
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        phoneSort: "descending",
+      });
+    } else {
+      console.log("ascending phone sort clicked");
+      let employees = this.state.employees.sort(
+        (a, b) => a.phone.replace(/[()-]/g, "") - b.phone.replace(/[()-]/g, "")
+      );
+      let matchedEmployees = this.state.matchedEmployees.sort(
+        (a, b) => a.phone.replace(/[()-]/g, "") - b.phone.replace(/[()-]/g, "")
+      );
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        phoneSort: "ascending",
+      });
+    }
+  };
+
 
 
 
