@@ -118,6 +118,10 @@
   .dropdown-content li:hover {
     background-color: #ddd;
   }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
   
    
       
