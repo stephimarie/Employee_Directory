@@ -1,0 +1,8 @@
+nav.topnav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Chewy";
+  }
+  
