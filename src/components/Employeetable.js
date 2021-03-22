@@ -62,8 +62,10 @@ function EmployeeTable(props) {
                     </div>
                 </Column>
             </Row>
+        {props.matchedEmployees.length > 0 ? (
+            <p>{props.matchedEmployees.length} Matches Found.</p>
+        ) : null}
 
-            
         </div>
     );
 }
