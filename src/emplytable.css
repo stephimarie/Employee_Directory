@@ -1,4 +1,7 @@
 .input-icons i {
     position: absolute;
   }
+  .input-icons {
+    margin-bottom: 10px;
+  }
   
