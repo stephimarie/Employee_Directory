@@ -4,7 +4,7 @@ import "./footer.css";
 function Footer() {
     return (
         <footer className="footer p-2">
-      <span>© Copyright 2021 Stephanie Marie</span>
+      <span>© Copyright Stephanie Marie</span>
         </footer>
     );
 }
