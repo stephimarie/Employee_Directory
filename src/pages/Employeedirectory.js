@@ -338,6 +338,32 @@ class EmployeeDirectory extends Component {
       search: "",
     });
   };
+  genderFilterFemale = () => {
+    console.log("female filter clicked");
+    let femaleEmployees = [];
+    if (this.state.employees.length < 20) {
+      this.getEmployees();
+      femaleEmployees = this.state.employees.filter(
+        (employee) => employee.gender === "female"
+      );
+      console.log(femaleEmployees);
+      this.setState({
+        employees: femaleEmployees,
+        matchedEmployees: [],
+        search: "",
+      });
+    }
+    femaleEmployees = this.state.employees.filter(
+      (employee) => employee.gender === "female"
+    );
+    console.log(femaleEmployees);
+    this.setState({
+      employees: femaleEmployees,
+      matchedEmployees: [],
+      search: "",
+    });
+  };
+
 
 
 
