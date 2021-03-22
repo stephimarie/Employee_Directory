@@ -1,5 +1,8 @@
 import React from "react";
 import "../emplytable.css";
+import { FiSearch, FiRefreshCcw, FiFilter } from "react-icons/fi";
+import { FaSortDown, FaSortUp } from "react-icons/fa";
+import { IconContext } from "react-icons";
 import Row from "./row";
 import Column from "./column";
 
