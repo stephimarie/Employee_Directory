@@ -102,6 +102,14 @@ function EmployeeTable(props) {
                             <FaSortUp className="sort-icon" />
                         )}
                     </th>
+                    <th scope="col" onClick={props.sortEmail}>
+                        Email
+                        {props.emailSort === "ascending" ? (
+                            <FaSortDown className="sort-icon" />
+                        ) : (
+                            <FaSortUp className="sort-icon" />
+                        )}
+                    </th>
                 </tr>
             </thead>
 
