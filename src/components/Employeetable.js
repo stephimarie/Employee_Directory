@@ -27,6 +27,34 @@ function EmployeeTable(props) {
                         placeholder="Search.."
                         ></input>
                     </div>
+                    <IconContext.Provider
+                        value={{
+                            color: "grey",
+                            className: "button-icon",
+                        }}
+                    >
+                        <button
+                            className="icon-button"
+                            onClick={props.refreshTableFunction}
+                        >
+                            <FiRefreshCcw />
+                            Refresh
+                        </button>
+                    </IconContext.Provider>
+                    <div className="dropdown">
+                        <IconContext.Provider
+                            value={{
+                                color: "grey",
+                                className: "button-icon",
+                            }}
+                        >
+                            <button className="dropdown-button">
+                                <FiFilter />
+                                Filter
+                            </button>
+                        </IconContext.Provider>
+
+                    </div>
                 </Column>
             </Row>
         </div>
