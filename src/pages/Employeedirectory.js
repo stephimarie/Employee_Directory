@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Container from "../components/Container/container";
-import PageHeader from "../components/pageHeader/pageHeader";
+import PageHeader from "../components/PageHeader/pageHeader";
 import EmployeesTable from "../components/EmployeesTable/EmployeesTable";
 
 class EmployeeDirectory extends Component {
