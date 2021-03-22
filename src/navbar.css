@@ -18,5 +18,9 @@ nav.topnav {
     color: #f2f2f2;
     font-size: 18px;
   }
+  nav.topnav a.active {
+    color: white;
+    border-bottom: 3px solid red;
+  }
   
   
