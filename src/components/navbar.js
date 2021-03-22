@@ -11,7 +11,11 @@ function Navbar() {
                 </NavLink>
             </a>
             <a>
+                <NavLink to="/employee-directory" activeClassName="active">
+                    Employee Directory
+                </NavLink>
             </a>
         </nav>
-    )
+    );
 }
+export default Navbar
