@@ -16,5 +16,10 @@ class EmployeeDirectory extends Component {
         addressSort: "ascending",
         matchedEmployees: [],
       }; 
+        // When this component mounts, search the Random User API
+  componentDidMount() {
+    this.getEmployees();
+  }
+
 }
 
