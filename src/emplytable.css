@@ -48,4 +48,7 @@
   table tbody tr {
     border-bottom: 1px solid #dddddd;
   }
-          
+  .index-column {
+    font-weight: bolder;
+  }
+            
