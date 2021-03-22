@@ -363,6 +363,38 @@ class EmployeeDirectory extends Component {
       search: "",
     });
   };
+  handleInputChange = (event) => {
+    console.log("Filtering table according to input");
+    console.log(event.target.value.toLowerCase());
+    this.setState({
+      search: event.target.value.toLowerCase(),
+    });
+
+    if (event.target.value.length === 0) {
+      this.setState({
+        matchedEmployees: [],
+      });
+    }
+
+    const matchedEmployees = [];
+    for (let i = 0; i < this.state.employees.length; i++) {
+      let name = this.state.employees[i].name.toLowerCase();
+      let email = this.state.employees[i].email;
+      let address = this.state.employees[i].address;
+      if (
+        (!this.state.search === "" && name.includes(this.state.search)) ||
+        email.includes(this.state.search) ||
+        address.includes(this.state.search)
+      ) {
+        matchedEmployees.push(this.state.employees[i]);
+      }
+    }
+    console.log(matchedEmployees);
+    this.setState({
+      matchedEmployees: matchedEmployees,
+    });
+  };
+
 
 
 
