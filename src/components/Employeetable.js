@@ -53,6 +53,10 @@ function EmployeeTable(props) {
                                 Filter
                             </button>
                         </IconContext.Provider>
+                        <div class="dropdown-content">
+                            <li onClick={props.genderFilterMale}>Male</li>
+                            <li onClick={props.genderFilterFemale}>Female</li>
+                        </div>
 
                     </div>
                 </Column>
