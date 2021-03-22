@@ -154,6 +154,31 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+  sortAge = () => {
+    if (this.state.ageSort === "ascending") {
+      console.log("descending age sort clicked");
+      let employees = this.state.employees.sort((a, b) => b.age - a.age);
+      let matchedEmployees = this.state.matchedEmployees.sort(
+        (a, b) => b.age - a.age
+      );
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        ageSort: "descending",
+      });
+    } else {
+      console.log("ascending age sort clicked");
+      let employees = this.state.employees.sort((a, b) => a.age - b.age);
+      let matchedEmployees = this.state.matchedEmployees.sort(
+        (a, b) => a.age - b.age
+      );
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        ageSort: "ascending",
+      });
+    }
+  };
 
 
 
