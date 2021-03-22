@@ -67,7 +67,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-   
+  .button-icon {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+     
    
   
    
