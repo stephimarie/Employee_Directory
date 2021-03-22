@@ -120,7 +120,37 @@ function EmployeeTable(props) {
                     </th>
                 </tr>
             </thead>
-
+            {props.matchedEmployees.length > 0 && 
+            props.matchedEmployees.length < 20 ? (
+                <tbody>
+            {props.matchedEmployees.map((employee, index) => (
+              <tr key={"row-" + index}>
+                <td className="index-column">{index + 1}</td>
+                <td>
+                  <img src={employee.picture} alt={employee.name}></img>
+                </td>
+                <td>{employee.name}</td>
+                <td>{employee.gender}</td>
+                <td>{employee.age}</td>
+                <td>
+                  <a href={"tel:" + employee.phone}>{employee.phone}</a>
+                </td>
+                <td>
+                  <a href={"mailto:" + employee.email}>{employee.email}</a>
+                </td>
+                <td>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={"http://maps.google.com/?q=" + employee.address}
+                  >
+                    {employee.address}
+                  </a>
+                </td>
+              </tr>
+            ))}
+                </tbody>
+            )}
         </table>
 
         </div>
