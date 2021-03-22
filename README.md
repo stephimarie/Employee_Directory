@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# React Employee Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://randomized-employee-directory.herokuapp.com/">Click Here To View Deployed Application</a>
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="https://reactjs.org/">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  </a>
+  
+  <a href="https://getbootstrap.com/">
+    <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+  </a>
 
-In the project directory, you can run:
+  <a href="https://dashboard.heroku.com/">
+  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
 
-### `npm start`
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT" />
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img src="https://img.shields.io/github/repo-size/kaylamuraoka/React-Employee-Directory?style=plastic" alt="GitHub repo size"/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <img src="https://img.shields.io/github/languages/count/kaylamuraoka/React-Employee-Directory?style=plastic" alt="GitHub language count"/>
 
-### `npm test`
+  <img src="https://img.shields.io/github/languages/top/kaylamuraoka/React-Employee-Directory?style=plastic" alt="GitHub top language">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <img src="https://img.shields.io/github/last-commit/kaylamuraoka/React-Employee-Directory?color=red&style=plastic" alt="GitHub last commit" />
 
-### `npm run build`
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Description
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This React-based app gives business professionals the ability to access non-sensitive data about their employees, and easily search, filter, and sort through their entire directory. For example, employers may search for specific employees via the search field, sort a field (Name, Email, DOB) in ascending or descending order. The employee directory is populated with randomly generated users via an API call to the [**Random User API**](https://randomuser.me/). This API simply generates random user data, including - a photo, title, name, gender, age, e-mail and mobile phone number. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Demo
 
-### `npm run eject`
+The following gif and images are examples of the web application's functionality and appearance.
+![Demo Gif](images/EmployeeDirectoryReactAppDemoGif.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### About Page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![About page screeenshot](images/about-page-screeenshot.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Employee Directory Page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Employee Directory page screeenshot](images/employee-directory-page-screenshot.png)
 
-## Learn More
+## Table of Contents
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [**Installation**](#installation)
+- [**Usage**](#usage)
+- [**License**](#license)
+- [**Contributing**](#contributing)
+- [**Questions**](#questions)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
 
-### Code Splitting
+Carry out the following steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone this [**project repository**](https://github.com/stephimarie/Employee_Directory) locally. For steps on how to clone a repository using the command line, read this section of the Github Docs [**about cloning a repository**](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository#about-cloning-a-repository).
 
-### Analyzing the Bundle Size
+2. Navigate to the project directory locally by the command `cd [local repository]`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Check package.json file and ensure scripts are notated as below:
 
-### Making a Progressive Web App
+```
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Run the command `npm install`. Note: Make sure to delete the node_modules folder and any 'lock' files such as
+   yarn.lock or package-lock.json before running `npm install` if present.
 
-### Advanced Configuration
+5. Now run `npm start` to run the app in the development mode.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+Click this [**link**](https://randomized-employee-directory.herokuapp.com/) to view the deployed "Employee Directory" application on Heroku.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the [**MIT**](https://opensource.org/licenses/MIT) license.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+All comments and suggestions regarding improvements to this project are welcomed. To contribute to this project, clone this [**project repository**](https://github.com/stephimarie/Employee_Directory) locally and commit your code on a separate branch. You may then modify the code to your liking, submit well-formed pull requests and open useful issues. For steps on how to clone a repository using the command line, read this section of the Github Docs [**about cloning a repository**](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository#about-cloning-a-repository).
+
+## Questions
+
+Please use the contact information below if you would like to reach me with any questions.
+
+- Github Profile: [**@stephimarie**](https://github.com/stephimarie)
+
+- Email: [**info.mccandless@gmail.com**](kmurs98@gmail.com)
