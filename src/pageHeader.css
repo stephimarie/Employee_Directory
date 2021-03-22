@@ -21,4 +21,18 @@
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
   }
+  .hero-text button {
+    font-family: "Chewy", cursive;
+    font-weight: 20px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 29px;
+    color: #ddd;
+    background-color: #009879;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
   
