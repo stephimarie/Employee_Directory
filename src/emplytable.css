@@ -38,4 +38,7 @@
     text-align: left;
     cursor: pointer;
   }
-     
+  .sort-icon {
+    margin-left: 3px;
+  }
+       
