@@ -394,6 +394,15 @@ class EmployeeDirectory extends Component {
       matchedEmployees: matchedEmployees,
     });
   };
+  refreshTable = () => {
+    console.log("Employee Directory has been refreshed");
+    this.getEmployees();
+    this.setState({
+      search: "",
+      matchedEmployees: [],
+    });
+  };
+
 
 
 
