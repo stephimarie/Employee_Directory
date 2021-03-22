@@ -60,6 +60,14 @@
   img {
     border-radius: 50px;
   }
+  .button-area {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+   
    
   
    
