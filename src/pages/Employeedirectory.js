@@ -208,6 +208,59 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+  sortEmail = () => {
+    if (this.state.emailSort === "ascending") {
+      console.log("descending email sort clicked");
+      let employees = this.state.employees.sort((a, b) => {
+        if (a.email > b.email) {
+          return -1;
+        }
+        if (a.email < b.email) {
+          return 1;
+        }
+        return 0;
+      });
+      let matchedEmployees = this.state.matchedEmployees.sort((a, b) => {
+        if (a.email > b.email) {
+          return -1;
+        }
+        if (a.email < b.email) {
+          return 1;
+        }
+        return 0;
+      });
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        emailSort: "descending",
+      });
+    } else {
+      console.log("ascending email sort clicked");
+      let employees = this.state.employees.sort((a, b) => {
+        if (a.email < b.email) {
+          return -1;
+        }
+        if (a.email > b.email) {
+          return 1;
+        }
+        return 0;
+      });
+      let matchedEmployees = this.state.matchedEmployees.sort((a, b) => {
+        if (a.email < b.email) {
+          return -1;
+        }
+        if (a.email > b.email) {
+          return 1;
+        }
+        return 0;
+      });
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        emailSort: "ascending",
+      });
+    }
+  };
 
 
 
