@@ -314,6 +314,31 @@ class EmployeeDirectory extends Component {
       });
     }
   };
+  genderFilterMale = () => {
+    console.log("male filter clicked");
+    if (this.state.employees.length < 20) {
+      this.getEmployees();
+      let maleEmployees = this.state.employees.filter(
+        (employee) => employee.gender === "male"
+      );
+      console.log(maleEmployees);
+      this.setState({
+        employees: maleEmployees,
+        matchedEmployees: [],
+        search: "",
+      });
+    }
+    let maleEmployees = this.state.employees.filter(
+      (employee) => employee.gender === "male"
+    );
+    console.log(maleEmployees);
+    this.setState({
+      employees: maleEmployees,
+      matchedEmployees: [],
+      search: "",
+    });
+  };
+
 
 
 
