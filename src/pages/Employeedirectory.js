@@ -47,6 +47,60 @@ class EmployeeDirectory extends Component {
       })
       .catch((err) => console.log(err));
   };
+  sortName = () => {
+    if (this.state.nameSort === "ascending") {
+      console.log("descending name sort clicked");
+      let employees = this.state.employees.sort((a, b) => {
+        if (a.name > b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
+      let matchedEmployees = this.state.matchedEmployees.sort((a, b) => {
+        if (a.name > b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        nameSort: "descending",
+      });
+    } else {
+      console.log("ascending name sort clicked");
+      let employees = this.state.employees.sort((a, b) => {
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
+      let matchedEmployees = this.state.matchedEmployees.sort((a, b) => {
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
+      this.setState({
+        employees: employees,
+        matchedEmployees: matchedEmployees,
+        nameSort: "ascending",
+      });
+    }
+  };
+
 
 
 }
