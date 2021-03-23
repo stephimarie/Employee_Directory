@@ -5,7 +5,7 @@ function About() {
   return (
     <div>
       <Banner
-        backgroundImage="https://content.linkedin.com/content/dam/business/marketing-solutions/global/en_US/blog/2017/06/WorkplaceHeader.jpg"
+        backgroundImage="https://therainmakercompanies.com/wp-content/uploads/2018/06/Close-up-hands-group-working-on-laptop.jpeg"
         title="About This App"
         subtitle="This React app gives business professionals the ability to access
         non-sensitive data about their employees, and easily search, filter,

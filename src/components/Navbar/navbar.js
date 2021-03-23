@@ -4,7 +4,7 @@ import "./navbar.css";
 
 function Navbar() {
     return (
-        <nav className="topNav">
+        <nav className="topnav">
             <a>
                 <NavLink to="/" activeClassName="active" exact={true}>
                     About
