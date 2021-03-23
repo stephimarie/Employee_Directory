@@ -1,8 +1,5 @@
 # Employee Directory
 
-<p align="center">
-  <a href="https://randomized-employee-directory.herokuapp.com/">Click Here To View Deployed Application</a>
-</p>
 
 <p align="center">
   <a href="https://reactjs.org/">
