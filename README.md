@@ -38,7 +38,7 @@ For example, employers may search for specific employees via the search field, s
 
 #### About Page
 
-![About page screeenshot](images/about-page-screeenshot.png)
+![About page screeenshot](i<img width="1435" alt="Screen Shot 2021-03-23 at 2 12 06 AM" src="https://user-images.githubusercontent.com/71304781/112123456-847f2f80-8b7e-11eb-80aa-f5965e779ca6.png">)
 
 #### Employee Directory Page
 
