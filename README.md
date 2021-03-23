@@ -38,11 +38,11 @@ For example, employers may search for specific employees via the search field, s
 
 #### About Page
 
-<img width="1435" alt="Screen Shot 2021-03-23 at 2 12 06 AM" src="https://user-images.githubusercontent.com/71304781/112123456-847f2f80-8b7e-11eb-80aa-f5965e779ca6.png">)
+<img width="1435" alt="Screen Shot 2021-03-23 at 2 12 06 AM" src="https://user-images.githubusercontent.com/71304781/112123456-847f2f80-8b7e-11eb-80aa-f5965e779ca6.png">
 
 #### Employee Directory Page
 
-![Employee Directory page screeenshot](images/employee-directory-page-screenshot.png)
+<img width="1433" alt="Screen Shot 2021-03-23 at 2 12 32 AM" src="https://user-images.githubusercontent.com/71304781/112123985-17b86500-8b7f-11eb-826d-a1bdeca06628.png">
 
 ## Table of Contents
 
