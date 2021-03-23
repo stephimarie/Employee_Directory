@@ -36,11 +36,6 @@ This React app gives business professionals the ability to access their employee
 and sort through their entire directory.
 For example, employers may search for specific employees via the search field, sort a field (Name, Email, DOB) in ascending or descending order. The employee directory is populated with randomly generated users via an API call to the [**Random User API**](https://randomuser.me/). This API simply generates random user data, including - a photo, title, name, gender, age, e-mail and mobile phone number. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Demo
-
-The following gif and images are examples of the web application's functionality and appearance.
-![Demo Gif](images/EmployeeDirectoryReactAppDemoGif.gif)
-
 #### About Page
 
 ![About page screeenshot](images/about-page-screeenshot.png)
@@ -52,10 +47,9 @@ The following gif and images are examples of the web application's functionality
 ## Table of Contents
 
 - [**Installation**](#installation)
-- [**Usage**](#usage)
 - [**License**](#license)
 - [**Contributing**](#contributing)
-- [**Questions**](#questions)
+
 
 ## Installation
 
@@ -81,9 +75,6 @@ Carry out the following steps:
 
 5. Now run `npm start` to run the app in the development mode.
 
-## Usage
-
-Click this [**link**](https://randomized-employee-directory.herokuapp.com/) to view the deployed "Employee Directory" application on Heroku.
 
 ## License
 
@@ -93,10 +84,4 @@ This project is licensed under the [**MIT**](https://opensource.org/licenses/MIT
 
 All comments and suggestions regarding improvements to this project are welcomed. To contribute to this project, clone this [**project repository**](https://github.com/stephimarie/Employee_Directory) locally and commit your code on a separate branch. You may then modify the code to your liking, submit well-formed pull requests and open useful issues. For steps on how to clone a repository using the command line, read this section of the Github Docs [**about cloning a repository**](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository#about-cloning-a-repository).
 
-## Questions
 
-Please use the contact information below if you would like to reach me with any questions.
-
-- Github Profile: [**@stephimarie**](https://github.com/stephimarie)
-
-- Email: [**info.mccandless@gmail.com**](kmurs98@gmail.com)
