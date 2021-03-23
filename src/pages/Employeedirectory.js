@@ -421,7 +421,7 @@ class EmployeeDirectory extends Component {
         <PageHeader
           backgroundImage="http://gkpr.com/wp-content/uploads/2018/03/teamwork.jpg"
           title="Employee Directory"
-          subtitle="This employee directory is populated with randomly generated users via an API call to the Random User API. This API simply generates random user data (shown below)."
+          subtitle="This employee directory is populated with randomly generated users created with an API call to the Random User API."
         ></PageHeader>
         <Container>
           <EmployeesTable

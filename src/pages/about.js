@@ -7,8 +7,7 @@ function About() {
       <Banner
         backgroundImage="https://therainmakercompanies.com/wp-content/uploads/2018/06/Close-up-hands-group-working-on-laptop.jpeg"
         title="About This App"
-        subtitle="This React app gives business professionals the ability to access
-        non-sensitive data about their employees, and easily search, filter,
+        subtitle="This React app gives business professionals the ability to access their employees, and easily search, filter,
         and sort through their entire directory."
         buttonText="View Employee Directory"
         buttonRoute="/employee-directory"
